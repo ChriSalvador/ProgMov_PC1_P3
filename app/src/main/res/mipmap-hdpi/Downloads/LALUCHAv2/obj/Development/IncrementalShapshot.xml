@@ -1,0 +1,96 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>cubo</Database>
+    <Server>LAPTOP-LDKP8DE8</Server>
+    <ConnectionString>Data Source=LAPTOP-LDKP8DE8;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>/1kmCxZFkI7A1044k/xBXHwvBWU=03/12/2022 13:39:0003/12/2022 13:39:00</TimeStamp>
+        <ID>
+          <String>LALUCHA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>GiFU24yC5SXNvZ8szG3hPwxf/ow=03/12/2022 13:41:1203/12/2022 13:41:12</TimeStamp>
+        <ID>
+          <String>LALUCHA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zivdr3IDa3D5REi56tWWAmchwuQ=03/12/2022 13:43:0003/12/2022 13:42:48</TimeStamp>
+        <ID>
+          <String>Dim Producto</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>hJrHQg+AW1GDtWODNWYMISSruKg=03/12/2022 13:43:4203/12/2022 13:43:31</TimeStamp>
+        <ID>
+          <String>Dim Sucursal</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>XM5Bt3jJCrmoOk0UCULthjhvTjk=03/12/2022 13:44:2603/12/2022 13:44:26</TimeStamp>
+        <ID>
+          <String>Dim Cliente</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>TGaFFnsBblCcPwp+2/3XrDg4//A=03/12/2022 13:45:0603/12/2022 13:44:55</TimeStamp>
+        <ID>
+          <String>Dim Campania Publicitaria</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>mlVQ+xEkvzKyIu4MaoNOvjoWpO4=03/12/2022 13:46:4903/12/2022 13:45:32</TimeStamp>
+        <ID>
+          <String>Dim Canal</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>tF5JbUBHW/Kfo/uoJ5hTh1N0K0s=03/12/2022 15:08:0803/12/2022 14:06:58</TimeStamp>
+        <ID>
+          <String>Dim Tiempo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>VcUQqO6aSrbUYE5SU/OmQT4Pyrs=03/12/2022 15:32:2203/12/2022 15:12:35a10223g8n9PuBorwkVOM7bXgFB8=03/12/2022 15:32:2203/12/2022 15:12:35</TimeStamp>
+        <ID>
+          <String>LALUCHA</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>E42uM4vCRJ1SA6vAjwdTCGSzC5w=03/12/2022 10:21:1203/12/2022 10:21:12</TimeStamp>
+      <ID>
+        <String>cubo</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2022-12-03T20:32:32.34Z</LastDeployed>
+</DeploymentSnapshot>

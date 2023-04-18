@@ -1,0 +1,2864 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="11/14/2022 2:02:43 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-LDKP8DE8"
+  DTS:CreatorName="LAPTOP-LDKP8DE8\Hp"
+  DTS:DTSID="{2B021444-2051-4483-93A4-D45E873E36BD}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.845.0"
+  DTS:LocaleID="3082"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="31"
+  DTS:VersionGUID="{E2D333AA-6828-4FAE-ABA0-E51B6F102EA7}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-AS63TOF.ANALITICO]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{6B344671-469F-451D-A6A3-009093C0B724}"
+      DTS:ObjectName="DESKTOP-AS63TOF.ANALITICO">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-AS63TOF;Initial Catalog=ANALITICO;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{6B344671-469F-451D-A6A3-009093C0B724}DESKTOP-AS63TOF.ANALITICO;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-AS63TOF.LALUCHA]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{10A3DABA-A1E7-4CDB-B600-EE6ECC4D5E65}"
+      DTS:ObjectName="DESKTOP-AS63TOF.LALUCHA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-AS63TOF;Initial Catalog=LALUCHA;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{10A3DABA-A1E7-4CDB-B600-EE6ECC4D5E65}DESKTOP-AS63TOF.LALUCHA;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-AS63TOF.PAGWEB]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F3D4F958-24FC-4102-A3EF-7D4950D04841}"
+      DTS:ObjectName="DESKTOP-AS63TOF.PAGWEB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-AS63TOF;Initial Catalog=PAGWEB;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{F3D4F958-24FC-4102-A3EF-7D4950D04841}DESKTOP-AS63TOF.PAGWEB;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-AS63TOF.SUCURSAL]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{C57955BA-FCD1-46FE-BD74-637CD54FC74A}"
+      DTS:ObjectName="DESKTOP-AS63TOF.SUCURSAL">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-AS63TOF;Initial Catalog=SUCURSAL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{C57955BA-FCD1-46FE-BD74-637CD54FC74A}DESKTOP-AS63TOF.SUCURSAL;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-LDKP8DE8.ANALITICO]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{C84A31E1-CB50-4E00-9CA2-CF93A5FE6EC4}"
+      DTS:ObjectName="LAPTOP-LDKP8DE8.ANALITICO">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-LDKP8DE8;Initial Catalog=ANALITICO;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{C84A31E1-CB50-4E00-9CA2-CF93A5FE6EC4}LAPTOP-LDKP8DE8.ANALITICO;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-LDKP8DE8.LALUCHA]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{4540988B-DFCF-49F3-B37E-9B7A2351B8FC}"
+      DTS:ObjectName="LAPTOP-LDKP8DE8.LALUCHA">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-LDKP8DE8;Initial Catalog=LALUCHA;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{4540988B-DFCF-49F3-B37E-9B7A2351B8FC}LAPTOP-LDKP8DE8.LALUCHA;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-LDKP8DE8.PAGWEB]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{6776999C-9D13-43DC-A013-BA4857AE2CAE}"
+      DTS:ObjectName="LAPTOP-LDKP8DE8.PAGWEB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-LDKP8DE8;Initial Catalog=PAGWEB;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{6776999C-9D13-43DC-A013-BA4857AE2CAE}LAPTOP-LDKP8DE8.PAGWEB;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-LDKP8DE8.SUCURSAL]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{6DCD1D81-F28C-4A00-9CEA-B21A2E0E3E6E}"
+      DTS:ObjectName="LAPTOP-LDKP8DE8.SUCURSAL">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-LDKP8DE8;Initial Catalog=SUCURSAL;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{6DCD1D81-F28C-4A00-9CEA-B21A2E0E3E6E}LAPTOP-LDKP8DE8.SUCURSAL;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Servidor Analitico"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Contenedor de secuencias"
+      DTS:DTSID="{3024FE6F-E28B-4F45-B096-FD061B205FEA}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Servidor Analitico">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Servidor Analitico\Data Campania a DimCampania"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{564F0B98-3898-49C0-A807-8DA757711E87}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Data Campania a DimCampania"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+                  description="Destino de OLE DB"
+                  name="Destino de OLE DB"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                      name="OpenRowset">[dbo].[CampañaPublicitaria]</property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="Comando SQL para ejecutar."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[DESKTOP-AS63TOF.LALUCHA]"
+                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-AS63TOF.LALUCHA]"
+                      description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                      errorOrTruncationOperation="Insertar"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="Entrada de destino de OLE DB">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[ID]"
+                          cachedDataType="i4"
+                          cachedName="ID"
+                          externalMetadataColumnId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[idCampañaPublicitaria]"
+                          lineageId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].Columns[ID]" />
+                        <inputColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[nombre]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="nombre"
+                          externalMetadataColumnId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[nombreCampaña]"
+                          lineageId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].Columns[nombre]" />
+                        <inputColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[fecha_inicio]"
+                          cachedDataType="dbDate"
+                          cachedName="fecha_inicio"
+                          externalMetadataColumnId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[fechainicio]"
+                          lineageId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].Columns[fecha_inicio]" />
+                        <inputColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[fecha_fin]"
+                          cachedDataType="dbDate"
+                          cachedName="fecha_fin"
+                          externalMetadataColumnId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[fechafin]"
+                          lineageId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].Columns[fecha_fin]" />
+                        <inputColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[costo]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="costo"
+                          externalMetadataColumnId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[montoCampañaPubli]"
+                          lineageId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].Columns[costo]" />
+                        <inputColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[temporada]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="9"
+                          cachedName="temporada"
+                          externalMetadataColumnId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[temporada]"
+                          lineageId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].Columns[temporada]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[idCampañaPublicitaria]"
+                          dataType="i4"
+                          name="idCampañaPublicitaria" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[nombreCampaña]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="nombreCampaña" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[fechainicio]"
+                          dataType="dbDate"
+                          name="fechainicio" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[fechafin]"
+                          dataType="dbDate"
+                          name="fechafin" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[montoCampañaPubli]"
+                          dataType="numeric"
+                          name="montoCampañaPubli"
+                          precision="6"
+                          scale="2" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[temporada]"
+                          codePage="1252"
+                          dataType="str"
+                          length="9"
+                          name="temporada" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Salida de error de destino de OLE DB"
+                      synchronousInputId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset"></property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select idcampania as ID,nombre,fecha_inicio,fecha_fin,costo,temporada from data_campania</property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">2</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[DESKTOP-AS63TOF.ANALITICO]"
+                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-AS63TOF.ANALITICO]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].Columns[ID]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ID]"
+                          lineageId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].Columns[ID]"
+                          name="ID"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].Columns[nombre]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[nombre]"
+                          length="50"
+                          lineageId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].Columns[nombre]"
+                          name="nombre"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].Columns[fecha_inicio]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[fecha_inicio]"
+                          lineageId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].Columns[fecha_inicio]"
+                          name="fecha_inicio"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].Columns[fecha_fin]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[fecha_fin]"
+                          lineageId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].Columns[fecha_fin]"
+                          name="fecha_fin"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].Columns[costo]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[costo]"
+                          length="50"
+                          lineageId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].Columns[costo]"
+                          name="costo"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].Columns[temporada]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[temporada]"
+                          length="9"
+                          lineageId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].Columns[temporada]"
+                          name="temporada"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ID]"
+                          dataType="i4"
+                          name="ID" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[nombre]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="nombre" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[fecha_inicio]"
+                          dataType="dbDate"
+                          name="fecha_inicio" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[fecha_fin]"
+                          dataType="dbDate"
+                          name="fecha_fin" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[costo]"
+                          dataType="numeric"
+                          name="costo"
+                          precision="6"
+                          scale="2" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[temporada]"
+                          codePage="1252"
+                          dataType="str"
+                          length="9"
+                          name="temporada" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ID]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ID]"
+                          name="ID" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[nombre]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[nombre]"
+                          name="nombre" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[fecha_inicio]"
+                          dataType="dbDate"
+                          lineageId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[fecha_inicio]"
+                          name="fecha_inicio" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[fecha_fin]"
+                          dataType="dbDate"
+                          lineageId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[fecha_fin]"
+                          name="fecha_fin" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[costo]"
+                          dataType="numeric"
+                          lineageId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[costo]"
+                          name="costo"
+                          precision="6"
+                          scale="2" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[temporada]"
+                          codePage="1252"
+                          dataType="str"
+                          length="9"
+                          lineageId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[temporada]"
+                          name="temporada" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Servidor Analitico\Data Campania a DimCampania.Paths[OLE DB Source Output]"
+                  endId="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                  name="OLE DB Source Output"
+                  startId="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Servidor Analitico\Data Canales a DimCanales"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{0487e92f-d20a-4308-ab06-eab88265bd5f}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Data Canales a DimCanales"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Servidor Analitico\Data Canales a DimCanales\Destino de OLE DB"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+                  description="Destino de OLE DB"
+                  name="Destino de OLE DB"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                      name="OpenRowset">[dbo].[DimCanal]</property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="Comando SQL para ejecutar."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Servidor Analitico\Data Canales a DimCanales\Destino de OLE DB.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[DESKTOP-AS63TOF.LALUCHA]"
+                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-AS63TOF.LALUCHA]"
+                      description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Servidor Analitico\Data Canales a DimCanales\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                      errorOrTruncationOperation="Insertar"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="Entrada de destino de OLE DB">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[tipo]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="30"
+                          cachedName="tipo"
+                          externalMetadataColumnId="Package\Servidor Analitico\Data Canales a DimCanales\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[tipo]"
+                          lineageId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[tipo]" />
+                        <inputColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[idCanales]"
+                          cachedDataType="i4"
+                          cachedName="idCanales"
+                          externalMetadataColumnId="Package\Servidor Analitico\Data Canales a DimCanales\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[idCanal]"
+                          lineageId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[idCanales]" />
+                        <inputColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[nombre]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="60"
+                          cachedName="nombre"
+                          externalMetadataColumnId="Package\Servidor Analitico\Data Canales a DimCanales\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[nombreCanal]"
+                          lineageId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[nombre]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[idCanal]"
+                          dataType="i4"
+                          name="idCanal" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[nombreCanal]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="nombreCanal" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[tipo]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="tipo" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Servidor Analitico\Data Canales a DimCanales\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Salida de error de destino de OLE DB"
+                      synchronousInputId="Package\Servidor Analitico\Data Canales a DimCanales\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Analitico\Data Canales a DimCanales\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Analitico\Data Canales a DimCanales\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
+                  description="Origen de OLE DB"
+                  name="Origen de OLE DB"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                      name="OpenRowset">[dbo].[Canales]</property>
+                    <property
+                      dataType="System.String"
+                      description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="Comando SQL para ejecutar."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.String"
+                      description="Variable que contiene el comando SQL para ejecutar."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Asignaciones entre los parámetros del comando SQL y las variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[DESKTOP-AS63TOF.ANALITICO]"
+                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-AS63TOF.ANALITICO]"
+                      description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB]"
+                      name="Salida de origen de OLE DB">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[idCanales]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[idCanales]"
+                          lineageId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[idCanales]"
+                          name="idCanales"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[nombre]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[nombre]"
+                          length="60"
+                          lineageId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[nombre]"
+                          name="nombre"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[tipo]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[tipo]"
+                          length="30"
+                          lineageId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[tipo]"
+                          name="tipo"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[fechadecreacion]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[fechadecreacion]"
+                          lineageId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[fechadecreacion]"
+                          name="fechadecreacion"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[estado]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[estado]"
+                          lineageId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[estado]"
+                          name="estado"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[fechademodificacion]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[fechademodificacion]"
+                          lineageId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[fechademodificacion]"
+                          name="fechademodificacion"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[idCanales]"
+                          dataType="i4"
+                          name="idCanales" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[nombre]"
+                          codePage="1252"
+                          dataType="str"
+                          length="60"
+                          name="nombre" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[tipo]"
+                          codePage="1252"
+                          dataType="str"
+                          length="30"
+                          name="tipo" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[fechadecreacion]"
+                          dataType="dbDate"
+                          name="fechadecreacion" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[estado]"
+                          dataType="i4"
+                          name="estado" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[fechademodificacion]"
+                          dataType="dbDate"
+                          name="fechademodificacion" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB]"
+                      isErrorOut="true"
+                      name="Salida de error de origen de OLE DB">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[idCanales]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[idCanales]"
+                          name="idCanales" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[nombre]"
+                          codePage="1252"
+                          dataType="str"
+                          length="60"
+                          lineageId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[nombre]"
+                          name="nombre" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[tipo]"
+                          codePage="1252"
+                          dataType="str"
+                          length="30"
+                          lineageId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[tipo]"
+                          name="tipo" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[fechadecreacion]"
+                          dataType="dbDate"
+                          lineageId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[fechadecreacion]"
+                          name="fechadecreacion" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[estado]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[estado]"
+                          name="estado" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[fechademodificacion]"
+                          dataType="dbDate"
+                          lineageId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[fechademodificacion]"
+                          name="fechademodificacion" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Servidor Analitico\Data Canales a DimCanales.Paths[Salida de origen de OLE DB]"
+                  endId="Package\Servidor Analitico\Data Canales a DimCanales\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                  name="Salida de origen de OLE DB"
+                  startId="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB.Outputs[Salida de origen de OLE DB]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Servidor Analitico\Delete Table DIMCAMPAÑAPUBLICITARIO y DIMCANAL"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Tarea Ejecutar SQL"
+          DTS:DTSID="{50404112-1B71-4045-88D3-459A16BDD26A}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Delete Table DIMCAMPAÑAPUBLICITARIO y DIMCANAL"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{10A3DABA-A1E7-4CDB-B600-EE6ECC4D5E65}"
+              SQLTask:SqlStatementSource="TRUNCATE TABLE CampañaPublicitaria&#xA;TRUNCATE TABLE DimCanal&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Servidor Analitico.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{9E104F28-866B-4043-B70D-73C2CFA79666}"
+          DTS:From="Package\Servidor Analitico\Delete Table DIMCAMPAÑAPUBLICITARIO y DIMCANAL"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Servidor Analitico\Data Campania a DimCampania" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Servidor Analitico.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{7C99EA70-3FD4-4D55-A005-02680F2A8342}"
+          DTS:From="Package\Servidor Analitico\Data Campania a DimCampania"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Servidor Analitico\Data Canales a DimCanales" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Servidor Pagina web"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Contenedor de secuencias"
+      DTS:DTSID="{C448CF49-8FDB-4646-80AB-2545CAB87333}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Servidor Pagina web">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Servidor Pagina web\Data Clientes a DataClientes"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{B4ECD6D3-AAC1-4E9D-B154-761F9BCD6D96}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Data Clientes a DataClientes"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[DimCliente]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[DESKTOP-AS63TOF.LALUCHA]"
+                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-AS63TOF.LALUCHA]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[nid]"
+                          cachedDataType="r8"
+                          cachedName="nid"
+                          externalMetadataColumnId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[nid]"
+                          lineageId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[nid]" />
+                        <inputColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[cnum_dni]"
+                          cachedDataType="r8"
+                          cachedName="cnum_dni"
+                          externalMetadataColumnId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cnum_dni]"
+                          lineageId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[cnum_dni]" />
+                        <inputColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[cnom_nombres]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="cnom_nombres"
+                          externalMetadataColumnId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cnom_nombres]"
+                          lineageId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[cnom_nombres]" />
+                        <inputColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[edad]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="edad"
+                          externalMetadataColumnId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[edad]"
+                          lineageId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[edad]" />
+                        <inputColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[genero]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="genero"
+                          externalMetadataColumnId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[genero]"
+                          lineageId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[genero]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[nid]"
+                          dataType="r8"
+                          name="nid" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cnum_dni]"
+                          dataType="r8"
+                          name="cnum_dni" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cnom_nombres]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="cnom_nombres" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[edad]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="edad" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[genero]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="genero" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[CLIENTES]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT nid,cnom_nombres, cnum_dni,edad, genero
+  from CLIENTE</property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">2</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[DESKTOP-AS63TOF.SUCURSAL]"
+                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-AS63TOF.SUCURSAL]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[nid]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[nid]"
+                          lineageId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[nid]"
+                          name="nid"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[cnum_dni]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[cnum_dni]"
+                          lineageId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[cnum_dni]"
+                          name="cnum_dni"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[cnom_nombres]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[cnom_nombres]"
+                          length="255"
+                          lineageId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[cnom_nombres]"
+                          name="cnom_nombres"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[edad]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[edad]"
+                          length="255"
+                          lineageId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[edad]"
+                          name="edad"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[genero]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[genero]"
+                          length="255"
+                          lineageId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].Columns[genero]"
+                          name="genero"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[nid]"
+                          dataType="i4"
+                          name="nid" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[cnum_dni]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="cnum_dni" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[cnom_nombres]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="cnom_nombres" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[edad]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="edad" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[genero]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="genero" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[nid]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[nid]"
+                          name="nid" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[cnom_nombres]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          lineageId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[cnom_nombres]"
+                          name="cnom_nombres" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[cnum_dni]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          lineageId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[cnum_dni]"
+                          name="cnum_dni" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[edad]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          lineageId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[edad]"
+                          name="edad" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[genero]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          lineageId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[genero]"
+                          name="genero" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Servidor Pagina web\Data Clientes a DataClientes.Paths[OLE DB Source Output]"
+                  endId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{dac7dd18-e532-48a7-84d5-4a291d4822e0}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Data Sucursales a DimSucursales"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[DimSucursal]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">true</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">true</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[DESKTOP-AS63TOF.LALUCHA]"
+                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-AS63TOF.LALUCHA]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[idSucursal]"
+                          cachedDataType="i4"
+                          cachedName="idSucursal"
+                          externalMetadataColumnId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[idSucursal]"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].Columns[idSucursal]" />
+                        <inputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ubicacion]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="ubicacion"
+                          externalMetadataColumnId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ubicacion]"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].Columns[ubicacion]" />
+                        <inputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[fechaApertura]"
+                          cachedDataType="dbDate"
+                          cachedName="fechaApertura"
+                          externalMetadataColumnId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fechaApertura]"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].Columns[fechaApertura]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[idSucursal]"
+                          dataType="i4"
+                          name="idSucursal" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ubicacion]"
+                          codePage="1252"
+                          dataType="str"
+                          length="255"
+                          name="ubicacion" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fechaApertura]"
+                          dataType="dbDate"
+                          name="fechaApertura" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[SUCURSAL]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[DESKTOP-AS63TOF.SUCURSAL]"
+                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-AS63TOF.SUCURSAL]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].Columns[idSucursal]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[idSucursal]"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].Columns[idSucursal]"
+                          name="idSucursal"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].Columns[lugar]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[lugar]"
+                          length="200"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].Columns[lugar]"
+                          name="lugar"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].Columns[ubicacion]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ubicacion]"
+                          length="200"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].Columns[ubicacion]"
+                          name="ubicacion"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].Columns[pais]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[pais]"
+                          length="100"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].Columns[pais]"
+                          name="pais"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].Columns[ciudad]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ciudad]"
+                          length="100"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].Columns[ciudad]"
+                          name="ciudad"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].Columns[departamento]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[departamento]"
+                          length="100"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].Columns[departamento]"
+                          name="departamento"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].Columns[distrito]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[distrito]"
+                          length="200"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].Columns[distrito]"
+                          name="distrito"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].Columns[fechaApertura]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[fechaApertura]"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].Columns[fechaApertura]"
+                          name="fechaApertura"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[idSucursal]"
+                          dataType="i4"
+                          name="idSucursal" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[lugar]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="lugar" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ubicacion]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="ubicacion" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[pais]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="pais" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ciudad]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="ciudad" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[departamento]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="departamento" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[distrito]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="distrito" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[fechaApertura]"
+                          dataType="dbDate"
+                          name="fechaApertura" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[idSucursal]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[idSucursal]"
+                          name="idSucursal" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[lugar]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[lugar]"
+                          name="lugar" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ubicacion]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ubicacion]"
+                          name="ubicacion" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[pais]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[pais]"
+                          name="pais" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ciudad]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ciudad]"
+                          name="ciudad" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[departamento]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[departamento]"
+                          name="departamento" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[distrito]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[distrito]"
+                          name="distrito" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[fechaApertura]"
+                          dataType="dbDate"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[fechaApertura]"
+                          name="fechaApertura" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Servidor Pagina web\Data Sucursales a DimSucursales.Paths[OLE DB Source Output]"
+                  endId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Servidor Pagina web\Delete Table DIMCLIENTE Y DIMSUCURSAL"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Tarea Ejecutar SQL"
+          DTS:DTSID="{1016ccc5-f2d7-48d3-9710-5ed8de2662c3}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Delete Table DIMCLIENTE Y DIMSUCURSAL"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{10A3DABA-A1E7-4CDB-B600-EE6ECC4D5E65}"
+              SQLTask:SqlStatementSource=" truncate table DimCliente&#xA; truncate table DimSucursal" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Servidor Pagina web.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{B7052757-3C16-4E4F-9DD7-FEB3E2AAA292}"
+          DTS:From="Package\Servidor Pagina web\Delete Table DIMCLIENTE Y DIMSUCURSAL"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Servidor Pagina web\Data Clientes a DataClientes" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Servidor Pagina web.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{049B53D3-A09C-498D-8A5C-F2DA12A9FDAF}"
+          DTS:From="Package\Servidor Pagina web\Data Clientes a DataClientes"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Servidor Pagina web\Data Sucursales a DimSucursales" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Servidor Sucursal"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Contenedor de secuencias"
+      DTS:DTSID="{BACF8EDE-5137-48FF-B2A9-000F13159412}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Servidor Sucursal">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Servidor Sucursal\Data Producto a DimProducto"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{D62894A0-C8DC-46B0-8C4A-8A68F9B2C55B}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Data Producto a DimProducto"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[DimProducto]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select idproducto as ID, nombre as Nombre, feclanzamiento as [Fecha de Lanzamiento], estado as Estado
+from DimProducto</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[DESKTOP-AS63TOF.LALUCHA]"
+                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-AS63TOF.LALUCHA]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[nombre]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="nombre"
+                          externalMetadataColumnId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[nombre]"
+                          lineageId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].Columns[nombre]" />
+                        <inputColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Estado]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Estado"
+                          externalMetadataColumnId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[estado]"
+                          lineageId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].Columns[Estado]" />
+                        <inputColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Fecha de Lanzamiento]"
+                          cachedDataType="dbDate"
+                          cachedName="Fecha de Lanzamiento"
+                          externalMetadataColumnId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fechalanzamiento]"
+                          lineageId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].Columns[Fecha de Lanzamiento]" />
+                        <inputColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ID]"
+                          cachedDataType="i4"
+                          cachedName="ID"
+                          externalMetadataColumnId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[idProducto]"
+                          lineageId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].Columns[ID]" />
+                        <inputColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[categoria]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="categoria"
+                          externalMetadataColumnId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[categoria]"
+                          lineageId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].Columns[categoria]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[idProducto]"
+                          dataType="i4"
+                          name="idProducto" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[nombre]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="nombre" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fechalanzamiento]"
+                          dataType="dbDate"
+                          name="fechalanzamiento" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[estado]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="estado" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[categoria]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="categoria" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[Producto]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select  idproducto as ID,p.categoria,p.nombre,p.feclanzamiento as [Fecha de Lanzamiento], p.estado as Estado
+from Producto p</property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">2</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[DESKTOP-AS63TOF.PAGWEB]"
+                      connectionManagerRefId="Package.ConnectionManagers[DESKTOP-AS63TOF.PAGWEB]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].Columns[Fecha de Lanzamiento]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Fecha de Lanzamiento]"
+                          lineageId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].Columns[Fecha de Lanzamiento]"
+                          name="Fecha de Lanzamiento"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].Columns[Estado]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Estado]"
+                          length="50"
+                          lineageId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].Columns[Estado]"
+                          name="Estado"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].Columns[ID]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ID]"
+                          lineageId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].Columns[ID]"
+                          name="ID"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].Columns[nombre]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[nombre]"
+                          length="100"
+                          lineageId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].Columns[nombre]"
+                          name="nombre"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].Columns[categoria]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[categoria]"
+                          length="100"
+                          lineageId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].Columns[categoria]"
+                          name="categoria"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Fecha de Lanzamiento]"
+                          dataType="dbDate"
+                          name="Fecha de Lanzamiento" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Estado]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Estado" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ID]"
+                          dataType="i4"
+                          name="ID" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[nombre]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="nombre" />
+                        <externalMetadataColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[categoria]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="categoria" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ID]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ID]"
+                          name="ID" />
+                        <outputColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[categoria]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          lineageId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[categoria]"
+                          name="categoria" />
+                        <outputColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[nombre]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          lineageId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[nombre]"
+                          name="nombre" />
+                        <outputColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Fecha de Lanzamiento]"
+                          dataType="dbDate"
+                          lineageId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Fecha de Lanzamiento]"
+                          name="Fecha de Lanzamiento" />
+                        <outputColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Estado]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Estado]"
+                          name="Estado" />
+                        <outputColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Servidor Sucursal\Data Producto a DimProducto.Paths[OLE DB Source Output]"
+                  endId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Servidor Sucursal\Delete Table DIMPRODUCTO"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Tarea Ejecutar SQL"
+          DTS:DTSID="{60199636-8720-445b-817a-97a3bd948933}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Delete Table DIMPRODUCTO"
+          DTS:ThreadHint="2">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{10A3DABA-A1E7-4CDB-B600-EE6ECC4D5E65}"
+              SQLTask:SqlStatementSource="truncate table DimProducto" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Servidor Sucursal.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{F0F04BAA-C5F7-4340-B862-1FE0D34950CD}"
+          DTS:From="Package\Servidor Sucursal\Delete Table DIMPRODUCTO"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Servidor Sucursal\Data Producto a DimProducto" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="237,42"
+          Id="Package\Servidor Analitico\Data Campania a DimCampania"
+          TopLeft="36,112" />
+        <NodeLayout
+          Size="218,42"
+          Id="Package\Servidor Analitico\Data Canales a DimCanales"
+          TopLeft="68,195" />
+        <NodeLayout
+          Size="305,42"
+          Id="Package\Servidor Analitico\Delete Table DIMCAMPAÑAPUBLICITARIO y DIMCANAL"
+          TopLeft="10,23" />
+        <EdgeLayout
+          Id="Package\Servidor Analitico.PrecedenceConstraints[Constraint]"
+          TopLeft="162.5,65">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-8,47"
+              Start="0,0"
+              End="-8,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.5"
+                    Point2="0,23.5"
+                    Point3="-4,23.5" />
+                  <mssgle:LineSegment
+                    End="-4,23.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4,23.5"
+                    Point2="-8,23.5"
+                    Point3="-8,27.5" />
+                  <mssgle:LineSegment
+                    End="-8,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Servidor Analitico.PrecedenceConstraints[Constraint 1]"
+          TopLeft="154.5,154">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="22.5,41"
+              Start="0,0"
+              End="22.5,33.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.5"
+                    Point2="0,20.5"
+                    Point3="4,20.5" />
+                  <mssgle:LineSegment
+                    End="18.5,20.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.5,20.5"
+                    Point2="22.5,20.5"
+                    Point3="22.5,24.5" />
+                  <mssgle:LineSegment
+                    End="22.5,33.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="320,380"
+          Size="320,423"
+          Id="Package\Servidor Analitico"
+          TopLeft="333,29" />
+        <NodeLayout
+          Size="220,42"
+          Id="Package\Servidor Pagina web\Data Clientes a DataClientes"
+          TopLeft="88,96" />
+        <NodeLayout
+          Size="246,42"
+          Id="Package\Servidor Pagina web\Data Sucursales a DimSucursales"
+          TopLeft="143,187" />
+        <NodeLayout
+          Size="337,42"
+          Id="Package\Servidor Pagina web\Delete Table DIMCLIENTE Y DIMSUCURSAL"
+          TopLeft="4,14" />
+        <EdgeLayout
+          Id="Package\Servidor Pagina web.PrecedenceConstraints[Constraint]"
+          TopLeft="172.5,56">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="25.5,40"
+              Start="0,0"
+              End="25.5,32.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16"
+                    Point2="0,20"
+                    Point3="4,20" />
+                  <mssgle:LineSegment
+                    End="21.5,20" />
+                  <mssgle:CubicBezierSegment
+                    Point1="21.5,20"
+                    Point2="25.5,20"
+                    Point3="25.5,24" />
+                  <mssgle:LineSegment
+                    End="25.5,32.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Servidor Pagina web.PrecedenceConstraints[Constraint 1]"
+          TopLeft="198,138">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="68,49"
+              Start="0,0"
+              End="68,41.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.5"
+                    Point2="0,24.5"
+                    Point3="4,24.5" />
+                  <mssgle:LineSegment
+                    End="64,24.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="64,24.5"
+                    Point2="68,24.5"
+                    Point3="68,28.5" />
+                  <mssgle:LineSegment
+                    End="68,41.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="392,329"
+          Size="392,372"
+          Id="Package\Servidor Pagina web"
+          TopLeft="669,30" />
+        <NodeLayout
+          Size="225,42"
+          Id="Package\Servidor Sucursal\Data Producto a DimProducto"
+          TopLeft="40,123" />
+        <NodeLayout
+          Size="227,42"
+          Id="Package\Servidor Sucursal\Delete Table DIMPRODUCTO"
+          TopLeft="21,29" />
+        <EdgeLayout
+          Id="Package\Servidor Sucursal.PrecedenceConstraints[Constraint]"
+          TopLeft="134.5,71">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="18,52"
+              Start="0,0"
+              End="18,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22"
+                    Point2="0,26"
+                    Point3="4,26" />
+                  <mssgle:LineSegment
+                    End="14,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="14,26"
+                    Point2="18,26"
+                    Point3="18,30" />
+                  <mssgle:LineSegment
+                    End="18,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="287,332"
+          Size="287,375"
+          Id="Package\Servidor Sucursal"
+          TopLeft="27,26" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Servidor Analitico\Data Campania a DimCampania">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source"
+          TopLeft="82,49" />
+        <NodeLayout
+          Size="175,42"
+          Id="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB"
+          TopLeft="280,166" />
+        <EdgeLayout
+          Id="Package\Servidor Analitico\Data Campania a DimCampania.Paths[OLE DB Source Output]"
+          TopLeft="160.5,91">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="207,75"
+              Start="0,0"
+              End="207,67.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.5"
+                    Point2="0,37.5"
+                    Point3="4,37.5" />
+                  <mssgle:LineSegment
+                    End="203,37.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="203,37.5"
+                    Point2="207,37.5"
+                    Point3="207,41.5" />
+                  <mssgle:LineSegment
+                    End="207,67.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Servidor Analitico\Data Campania a DimCampania\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Servidor Analitico\Data Canales a DimCanales">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB"
+          TopLeft="198,88" />
+        <NodeLayout
+          Size="175,42"
+          Id="Package\Servidor Analitico\Data Canales a DimCanales\Destino de OLE DB"
+          TopLeft="382,203" />
+        <EdgeLayout
+          Id="Package\Servidor Analitico\Data Canales a DimCanales.Paths[Salida de origen de OLE DB]"
+          TopLeft="283,130">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="186.5,73"
+              Start="0,0"
+              End="186.5,65.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.5"
+                    Point2="0,36.5"
+                    Point3="4,36.5" />
+                  <mssgle:LineSegment
+                    End="182.5,36.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="182.5,36.5"
+                    Point2="186.5,36.5"
+                    Point3="186.5,40.5" />
+                  <mssgle:LineSegment
+                    End="186.5,65.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Servidor Pagina web\Data Clientes a DataClientes">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination"
+          TopLeft="210,203" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source"
+          TopLeft="151,79" />
+        <EdgeLayout
+          Id="Package\Servidor Pagina web\Data Clientes a DataClientes.Paths[OLE DB Source Output]"
+          TopLeft="229.5,121">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="69,82"
+              Start="0,0"
+              End="69,74.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37"
+                    Point2="0,41"
+                    Point3="4,41" />
+                  <mssgle:LineSegment
+                    End="65,41" />
+                  <mssgle:CubicBezierSegment
+                    Point1="65,41"
+                    Point2="69,41"
+                    Point3="69,45" />
+                  <mssgle:LineSegment
+                    End="69,74.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Servidor Pagina web\Data Clientes a DataClientes\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Servidor Pagina web\Data Sucursales a DimSucursales">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source"
+          TopLeft="137,80" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Destination"
+          TopLeft="321,214" />
+        <EdgeLayout
+          Id="Package\Servidor Pagina web\Data Sucursales a DimSucursales.Paths[OLE DB Source Output]"
+          TopLeft="215.5,122">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="194,92"
+              Start="0,0"
+              End="194,84.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,42"
+                    Point2="0,46"
+                    Point3="4,46" />
+                  <mssgle:LineSegment
+                    End="190,46" />
+                  <mssgle:CubicBezierSegment
+                    Point1="190,46"
+                    Point2="194,46"
+                    Point3="194,50" />
+                  <mssgle:LineSegment
+                    End="194,84.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Servidor Pagina web\Data Sucursales a DimSucursales\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Servidor Sucursal\Data Producto a DimProducto">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source"
+          TopLeft="70,45" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination"
+          TopLeft="127,129" />
+        <EdgeLayout
+          Id="Package\Servidor Sucursal\Data Producto a DimProducto.Paths[OLE DB Source Output]"
+          TopLeft="148.5,87">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="67,42"
+              Start="0,0"
+              End="67,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17"
+                    Point2="0,21"
+                    Point3="4,21" />
+                  <mssgle:LineSegment
+                    End="63,21" />
+                  <mssgle:CubicBezierSegment
+                    Point1="63,21"
+                    Point2="67,21"
+                    Point3="67,25" />
+                  <mssgle:LineSegment
+                    End="67,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Servidor Sucursal\Data Producto a DimProducto\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Servidor Analitico\Data Canales a DimCanales\Origen de OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Servidor Analitico\Data Canales a DimCanales\Destino de OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Servidor Analitico\Data Campania a DimCampania\Destino de OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
